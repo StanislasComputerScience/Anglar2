@@ -1,0 +1,17 @@
+<!-- mon-composant.component.html -->
+<p>
+  <img [src]="imageSrc" [style.height]="imageHeight" [alt]="imAlt" />
+<!--  equivalent à :
+<img src={{imageSrc}} [style.height]="imageHeight" [alt]="imAlt" /> -->
+
+  <br>
+  Je m'appelle {{name}} et je mesure {{imageHeight}} !
+  <button (click)="helloWorld()">Hello</button>
+  <br>
+</p>
+
+<!-- necess CommonModule en import --> 
+<ul>
+  <li *ngFor="let item of list" class="puce">{{item}}</li>
+ </ul>
+ 
